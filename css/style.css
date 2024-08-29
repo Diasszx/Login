@@ -1,6 +1,6 @@
 @import url('https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbWVObERzSmQ3YkZOYzhfUWNwNmdHc0hJN3dfd3xBQ3Jtc0ttVVdreU4tbmhLQzV5MFVLcmptaDN4OTAxQ3NvX3pKS1ZnSnM1WnliVkwxdVNqeHd2RzhRSDFodTd0ZFkyQU0wbXBSdXRoU0F4MHAyb1gyV3RBT29UbW1tV01JeVFsaTBzcVVLVnFUTUtocjFVbUlEYw&q=https%3A%2F%2Ffonts.googleapis.com%2Fcss2%3Ffamily%3DPoppins%3Awght%40100%3B200%3B300%3B400%26display%3Dswap%27%29%3B&v=qKWApkuhNu8');
 
-:root{/*Variaveis de cor*/
+:root{/*colors*/
     --color-light-50: #f8fafc;
 
     --color-dark-50: #797984;
@@ -22,7 +22,7 @@
     box-sizing: border-box;
 }
 
-#container{
+#container{ /*background*/
     height: 100vh; 
     width: 100%;
     background:var(--color-gradient) ;
@@ -31,7 +31,7 @@
     justify-content: center;
 } 
 
-#loginForm{
+#loginForm{/*retancle*/
     background-color: var(--color-light-50);
     display: flex;
     flex-direction: column;
@@ -54,7 +54,7 @@
 
 }
 
-#formHeader h1::before{
+#formHeader h1::before{/*purple line*/
     position: absolute;
     content: '';
     width: 40%;
@@ -64,7 +64,7 @@
     border-radius: 5px;
 }
 
-#modeIcon{
+#modeIcon{/*moon*/
     cursor: pointer;
     font-size: 20px;
 }
@@ -104,12 +104,12 @@
     border-bottom: 1px solid var(--color-purple-50);
 }
 
-.inputField i{
+.inputField i{/*icons*/
     font-size: 18px;
     color: var(--color-dark-900);
 }
 
-.inputField input{
+.inputField input{/*input box*/
     border: none;
     background-color: transparent;
     width: 260px;
@@ -143,4 +143,15 @@
 
 #loginButton:hover{
     transform: scale(1.05);
+}
+
+.dark#loginForm{
+    color: var(--color-light-50);
+    background-color: var(--color-dark-100);
+
+}
+
+.dark#loginForm .inputField input, 
+.dark#loginForm .inputField i{
+    color: var(--color-light-50);
 }
